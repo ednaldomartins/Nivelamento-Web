@@ -1,36 +1,112 @@
+/*
+Menu Principal no Cabeçalho
+*/
+.menu-principal {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
 .menu-principal ul li {
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
-    margin-left: 20px;
+    margin:auto 8px;
     display: inline;
 }
 
 .menu-principal a{
     color: #EFFBF8;
-    text-align: right;
-    bottom: 0;
-    right: 0;
 }
 
+.menu-principal a:hover {
+    color: aqua;
+}
+
+.menu-principal a:active {
+    color: blue;
+}
+
+/*
+Menu de Cursos
+*/
+.menu-cursos {
+    margin-left: 16px;
+}
+
+.menu-cursos a {
+    margin-left: 16px;
+}
+
+.menu-cursos li a::before {
+    content: '> ';
+}
+
+.menu-cursos li ul{
+    display: none;
+}
+
+.menu-cursos li:hover ul{
+    display: block;
+}
+
+.menu-cursos ul ul li {
+    background-color: red; 
+}
+
+/*
+Cabeçalho e Rodapé
+*/
 header {
-    background-color: rgb(12, 34, 38);
     position: relative;
+    height: 50px;
+    border-radius: 0 0 8px 8px;
+}
+
+.linear-gradient {
+    background: linear-gradient(to right, rgb(10,30,38), rgb(20, 60, 70),  rgb(16, 45, 50));
 }
 
 .logo {
     position: relative;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
+    top: 4px;
+    left: 16px;
+}
+
+.rodape {
+    background-color: rgb(12, 34, 38);
+    position: relative;
+    height: 40px;
+}
+
+.rodape-txt {
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    padding: 12px 30px;
+    color: #EFFBF8;
+    text-shadow: 4px 4px 2px rgb(30, 130, 150);
+}
+
+.rodape img {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    bottom: 0;
+    right: 0;
+    padding: 4px;
 }
 
 .container {
-    margin: 0 auto;
-    width: 900;
+    margin: auto;
 }
 
+/*
+Corpo
+*/
 body {
     background-color: #EFFBF8;
     font-family: 'Times New Roman', Times, serif;
     font-size: 16px;
 }
-
