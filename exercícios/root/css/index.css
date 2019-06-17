@@ -1,0 +1,36 @@
+.menu-principal ul li {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 20px;
+    display: inline;
+}
+
+.menu-principal a{
+    color: #EFFBF8;
+    text-align: right;
+    bottom: 0;
+    right: 0;
+}
+
+header {
+    background-color: rgb(12, 34, 38);
+    position: relative;
+}
+
+.logo {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 900;
+}
+
+body {
+    background-color: #EFFBF8;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
