@@ -2,9 +2,10 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <link rel = "stylesheet" href = "css/questao.css">
         <title>Questão 4.1</title>
-        <link rel = "stylesheet" href = "css/questao1.css">
     </head>
+
     <body>
         <p>
             Questão 4.1- Elabore um Javascript que leia de uma página HTML (com formulários)
@@ -13,11 +14,11 @@
             Exemplo de tabela que deve ser gerada para as entradas os números 2 e 1. Utilize CSS
             para deixar a tabela com melhor apresentação:
         </p>
-        <img src="img/questao-4-1-tabela.png" alt="Tabela da questão 4.1">
+        <img src="img/questao-1.png" alt="Tabela da questão 4.1">
         
         <form>
-            <input id="n1" type="number" onchange="calcular()" ></p>
-            <input id="n2" type="number" onchange="calcular()" ></p>
+            <p>Valor 1: <input id="n1" type="number" onchange="calcular()" >
+            <p>Valor 2: <input id="n2" type="number" onchange="calcular()" >
         </form>
 
         <table id = "tabela">
@@ -39,8 +40,6 @@
                 <td></td>
             </tr>
         </template>
-
-        <div id="output"></div>
 
         <script src="js/questao-1.js"></script>
 
