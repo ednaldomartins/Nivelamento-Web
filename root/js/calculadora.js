@@ -1,6 +1,13 @@
+
+var numero = document.querySelector('#numero')
 function adicionarNumero(n) {
-	var numero = document.querySelector('#numero');
-	numero.innerHTML += n;
+	if(numero.innerHTML.length < 8) {
+		if(numero.innerHTML != 0) {
+			numero.innerHTML += n
+		} else {
+			numero.innerHTML = n
+		}
+	}
 }
 
 function adicao() {}
