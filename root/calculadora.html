@@ -7,32 +7,36 @@
     </head>
 
     <body>
+
+        <script src="js/calculadora.js"></script>
+
         <div id="calculadora" >
             <div id="display">
                 <div id="numero">0</div>
             </div>
 
             <div id="botoes">
-                <button class="botao-outros">AC</button>
-                <button class="botao-outros">DEL</button>
-                <button class="botao-outros">%</button>
-                <button class="botao-simbolo">+</button>
-                <button class="botao-numero">7</button>
-                <button class="botao-numero">8</button>
-                <button class="botao-numero">9</button>
-                <button class="botao-simbolo">-</button>
-                <button class="botao-numero">4</button>
-                <button class="botao-numero">5</button>
-                <button class="botao-numero">6</button>
-                <button class="botao-simbolo">x</button>
-                <button class="botao-numero">1</button>
-                <button class="botao-numero">2</button>
-                <button class="botao-numero">3</button>
-                <button class="botao-simbolo">/</button>
-                <button class="botao-outros">.</button>
-                <button class="botao-numero">0</button>
-                <button class="botao-igual">=</button>
+                <button class="botao-outros" onclick="limparDisplay()">AC</button>
+                <button class="botao-outros" onclick="apagarDigito()">DEL</button>
+                <button class="botao-outros" onclick="porcentagem()">%</button>
+                <button class="botao-simbolo" onclick="adicao()">+</button>
+                <button class="botao-numero" onclick="adicionarNumero('7')">7</button>
+                <button class="botao-numero" onclick="adicionarNumero('8')">8</button>
+                <button class="botao-numero" onclick="adicionarNumero('9')">9</button>
+                <button class="botao-simbolo" onclick="subtracao()">-</button>
+                <button class="botao-numero" onclick="adicionarNumero('4')">4</button>
+                <button class="botao-numero" onclick="adicionarNumero('5')">5</button>
+                <button class="botao-numero" onclick="adicionarNumero('6')">6</button>
+                <button class="botao-simbolo" onclick="multiplicacao()">x</button>
+                <button class="botao-numero" onclick="adicionarNumero('1')">1</button>
+                <button class="botao-numero" onclick="adicionarNumero('2')">2</button>
+                <button class="botao-numero" onclick="adicionarNumero('3')">3</button>
+                <button class="botao-simbolo" onclick="divisao()">/</button>
+                <button class="botao-outros" onclick="ponto()">.</button>
+                <button class="botao-numero" onclick="adicionarNumero('0')">0</button>
+                <button class="botao-igual" onclick="igual()">=</button>
             </div>
         </div>    
+
     </body>
 </html>
