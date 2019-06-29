@@ -1,24 +1,48 @@
+var numero = document.querySelector('#numero');
+var operacao = '+';
+var resultadoAtual = 0;
+var ultimoNumero = resultadoAtual;
 
-var numero = document.querySelector('#numero')
 function adicionarNumero(n) {
-	if(numero.innerHTML.length < 8) {
-		if(numero.innerHTML != 0) {
-			numero.innerHTML += n
+	if (numero.innerHTML.length < 8) {
+		if (numero.innerHTML != 0) {
+			numero.innerHTML += n;
 		} else {
-			numero.innerHTML = n
+			numero.innerHTML = n;
 		}
 	}
 }
 
-function adicao() {}
+function adicao() {
+	resultadoAtual = eval(resultadoAtual + operacao + numero.innerHTML);
+	operacao = '+';
+	numero.innerHTML = 0;
+}
 
-function subtracao() {}
+function subtracao() {
+	resultadoAtual = eval(resultadoAtual + operacao + numero.innerHTML);
+	operacao = '-';
+	numero.innerHTML = 0;
+}
 
-function multiplicacao() {}
+function multiplicacao() {
+	resultadoAtual = eval(resultadoAtual + operacao + numero.innerHTML);
+	operacao = '*';
+	numero.innerHTML = 0;
+}
 
-function divisao() {}
+function divisao() {
+	resultadoAtual = eval(resultadoAtual + operacao + numero.innerHTML);
+	operacao = '/';
+	numero.innerHTML = 0;
+}
 
-function igual() {}
+function igual() {
+	resultadoAtual = (parseInt(eval(resultadoAtual + operacao + numero.innerHTML)*10000))/10000;
+	numero.innerHTML = resultadoAtual;
+	operacao = '+';
+	resultadoAtual = 0;
+}
 
 function ponto() {}
 

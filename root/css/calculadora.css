@@ -3,46 +3,47 @@
 	height: 460px;
 	width: 320px;
 	border-radius: 16px 16px 16px 16px;
-    background: linear-gradient(to right, rgb(10, 30, 38), rgb(20, 60, 70), rgb(16, 45, 50));
-    box-shadow: 0px 0px 16px rgb(10, 30, 38);
+	background: linear-gradient(to right, rgb(10, 30, 38), rgb(20, 60, 70), rgb(16, 45, 50));
+	box-shadow: 0px 0px 16px rgb(10, 30, 38);
 }
 
 #display {
 	position: absolute;
 	height: 50px;
-    width: 280px;margin: 6%;
-    background-color: white;
-    border-radius: 2px 2px 2px 2px;
+	width: 280px;
+	margin: 6%;
+	background-color: white;
+	border-radius: 2px 2px 2px 2px;
 }
 
 #numero {
-    position: absolute;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 44px;
-    bottom: 0;
-    right: 8px;
+	position: absolute;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 44px;
+	bottom: 0;
+	right: 8px;
 }
 
 #botoes {
-    position: absolute;
+	position: absolute;
 	height: 300px;
-    width: 280px;
-    margin-top: 32%;
-    margin-left: 4%;
-    margin-right: 4%;
-    border-radius: 2px 2px 2px 2px;
-    text-align: end;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 40px;
+	width: 280px;
+	margin-top: 32%;
+	margin-left: 4%;
+	margin-right: 4%;
+	border-radius: 2px 2px 2px 2px;
+	text-align: end;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 40px;
 }
 
 #botoes button {
-    border-radius: 8px;
-    margin-bottom: 6px;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 24px;
-    text-shadow: 0px 0px 2px rgb(10, 30, 38);
-    font-weight: bold;
+	border-radius: 8px;
+	margin-bottom: 6px;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 24px;
+	text-shadow: 0px 0px 2px rgb(10, 30, 38);
+	font-weight: bold;
 }
 
 .botao-numero {
