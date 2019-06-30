@@ -1,5 +1,5 @@
 var numero = document.querySelector('#numero');
-var operacao = '+';
+var operador = '+';
 var resultadoAtual = 0;
 var ultimoNumero = resultadoAtual;
 
@@ -14,33 +14,31 @@ function adicionarNumero(n) {
 }
 
 function adicao() {
-	resultadoAtual = eval(resultadoAtual + operacao + numero.innerHTML);
-	operacao = '+';
-	numero.innerHTML = 0;
+	operacao('+');
 }
 
 function subtracao() {
-	resultadoAtual = eval(resultadoAtual + operacao + numero.innerHTML);
-	operacao = '-';
-	numero.innerHTML = 0;
+	operacao('-');
 }
 
 function multiplicacao() {
-	resultadoAtual = eval(resultadoAtual + operacao + numero.innerHTML);
-	operacao = '*';
-	numero.innerHTML = 0;
+	operacao('*');
 }
 
 function divisao() {
-	resultadoAtual = eval(resultadoAtual + operacao + numero.innerHTML);
-	operacao = '/';
+	operacao('/');
+}
+
+function operacao(novoOperador) {
+	resultadoAtual = eval(resultadoAtual + operador + numero.innerHTML);
+	operador = novoOperador;
 	numero.innerHTML = 0;
 }
 
 function igual() {
-	resultadoAtual = (parseInt(eval(resultadoAtual + operacao + numero.innerHTML)*10000))/10000;
+	resultadoAtual = parseInt(eval(resultadoAtual + operador + numero.innerHTML) * 10000) / 10000;
 	numero.innerHTML = resultadoAtual;
-	operacao = '+';
+	operador = '+';
 	resultadoAtual = 0;
 }
 
