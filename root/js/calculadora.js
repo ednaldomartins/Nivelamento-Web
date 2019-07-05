@@ -1,7 +1,6 @@
-var numero = document.querySelector('#numero');
-var operador = '+';
-var resultadoAtual = 0;
-var ultimoNumero = resultadoAtual;
+let numero = document.querySelector('#numero');
+let operador = '+';
+let resultadoAtual = 0;
 
 function adicionarNumero(n) {
 	if (numero.innerHTML.length < 8) {
@@ -68,14 +67,13 @@ function porcentagem() {
 	 * Quando +|- recalculamos o valor guardado aplicando um novo baseado na porcentagem
 	 * exemplo: 950 + 10% = 1045, 950 - 10% = 855
 	 */
-	if(operador.search('\\+|\\-') !== -1)
-		numero.innerHTML = resultadoAtual * (numero.textContent / 100)
-	/**
+	if (operador.search('\\+|\\-') !== -1) numero.innerHTML = resultadoAtual * (numero.textContent / 100);
+	else
+		/**
 	 * Quando *|/ o resultado é a extração da porcentagem ou o valor inverso da porcentagem respectivamente
 	 * exemplo: 950 * 10% = 95,  950 / 10% = 9500 (inverso de: 9500 * 10% = 950)
 	 */
-	else 
-		numero.innerHTML = (numero.textContent / 100);
+		numero.innerHTML = numero.textContent / 100;
 
 	igual();
 }
